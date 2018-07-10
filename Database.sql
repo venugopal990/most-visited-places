@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 08, 2018 at 09:38 PM
+-- Generation Time: Jul 10, 2018 at 03:57 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.1
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `places`
 --
+CREATE DATABASE IF NOT EXISTS `places` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `places`;
 
 -- --------------------------------------------------------
 
@@ -149,26 +151,7 @@ CREATE TABLE `names` (
 --
 
 INSERT INTO `names` (`id`, `name`, `Time_stamp`) VALUES
-(28, 'venu', '2018-07-08 05:32:06'),
-(29, 'naveen', '2018-07-08 05:35:43'),
-(30, 'tarun', '2018-07-08 07:47:19'),
-(31, 'google', '2018-07-08 07:48:36'),
-(32, 'venu', '2018-07-08 08:01:44'),
-(33, 'tarun', '2018-07-08 08:50:05'),
-(34, 'modi', '2018-07-08 15:29:01'),
-(35, 'venu gopal', '2018-07-08 15:42:05'),
-(36, 'tarun', '2018-07-08 16:56:19'),
-(37, 'tarun', '2018-07-08 18:00:53'),
-(38, 'naveen', '2018-07-08 18:19:22'),
-(39, 'venu gopal', '2018-07-08 19:19:25'),
-(40, 'venu', '2018-07-08 19:19:52'),
-(41, 'surya naryana', '2018-07-08 19:25:12'),
-(42, 'venu gopal', '2018-07-08 19:25:37'),
-(43, 'venu', '2018-07-08 19:28:31'),
-(44, 'venu gopal', '2018-07-08 19:33:59'),
-(45, 'venu gopal', '2018-07-08 19:34:27'),
-(46, 'naveen', '2018-07-08 19:36:25');
-
+(28, 'venu', '2018-07-08 05:32:06');
 -- --------------------------------------------------------
 
 --
@@ -274,7 +257,7 @@ ALTER TABLE `lakshadweep`
 -- AUTO_INCREMENT for table `names`
 --
 ALTER TABLE `names`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT for table `puducherry`
